@@ -9,7 +9,8 @@ const Button = ({ children, className, variant = "md", ...props }) => {
                 "bg-white font-bold text-black rounded-full",
                 variants.includes("sm") && "px-4 py-1.5",
                 variants.includes("md") && "text-xl px-5 py-3",
-                variants.includes("hollow") && "border border-white",
+                variants.includes("hollow") &&
+                    "border border-white bg-transparent text-white font-semibold",
                 className
             )}
             {...props}
